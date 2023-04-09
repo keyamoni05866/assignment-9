@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Technical Database Engineer",
+    "company-name": "Google LLC",
+    "job-type1": "Remote",
+    "job-type2": "Onsite",
+    "Image": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
+    "location": "New York",
+    "salary": "$100,000 - $120,000",
+    "job_description": "We are seeking a highly skilled software developer to join our team...",
+    "job_responsibilities": "Design and develop new software applications.Maintain and improve existing software systems.Collaborate with cross-functional teams to identify and solve problems.Stay up-to-date with emerging technologies and programming languages",
+    "educational_requirements": "Bachelor's degree in Computer Science or related field",
+    "experience": "2+ years of professional software development experience",
+    "email": "jobs@abcinc.com",
+    "phone": "555-555-1234",
+    "address": "123 Main St, New York, NY"
+  },
+  {
+    "id": 2,
+    "title": "Senior Product Designer",
+    "company-name": "Netflix",
+    "job-type1": "Remote",
+    "job-type2": "Onsite",
+    "Image": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
+    "location": "Los Angeles",
+    "salary": "$70,000 - $80,000",
+    "job_description": "We are seeking a highly skilled senior product designer to join our team. Who can manage our company",
+    "job_responsibilities": "Design and develop new software applications.Maintain and improve existing software systems.Collaborate with cross-functional teams to identify and solve problems.Stay up-to-date with emerging technologies and programming languages",
+    "educational_requirements": "Bachelor's degree in Computer Science or related field",
+    "experience": "2+ years of professional software development experience",
+    "email": "jobs@abcinc.com",
+    "phone": "555-555-1234",
+    "address": "123 Main St, New York, NY"
+  },
+
+  {
+    "id": 5,
+    "image": "https://example.com/image4.jpg",
+    "company_name": "Tech Solutions",
+    "title": "IT Support Specialist",
+    "location": "San Francisco",
+    "salary": "$60,000 - $70,000",
+    "job-type1": "Remote",
+    "job-type2": "Onsite",
+    "job_description": "We are seeking a highly skilled senior product designer to join our team. Who can manage our company",
+    "job_responsibilities": "Installing, configuring, and maintaining hardware and software systems, including servers, desktops, laptops, printers, and mobile devices.Developing and implementing IT policies and procedures to ensure system security and data integrity.Managing backups and disaster recovery plans to ensure business continuity in case of system failures or disasters.",
+    "educational_requirements": "Bachelor's degree in Computer Science or related field",
+    "experience": "2+ years of professional software development experience",
+    "email": "jonson@abcinc.com",
+    "phone": "555-555-1234",
+    "address": "123 Main St, San Francisco, NY"
+
+  }
+  
+]
