@@ -4,8 +4,8 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <div classNameName="">
-      <div className="navbar bg-base-100">
+    <div>
+      <div className="navbar bg-sky-50">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -35,7 +35,7 @@ const Header = () => {
               <Link to="/blog">Blog</Link>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">Career Hub</a>
+          <a className="btn btn-ghost normal-case text-xl">JobHunter</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

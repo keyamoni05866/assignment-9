@@ -1,0 +1,20 @@
+.banner{
+    display: flex;
+    margin-top: 20px;
+}
+@media screen and (max-width: 600px){
+    .banner{
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    }
+    .img-container{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .info{
+        width: 100%;
+    }
+  }
