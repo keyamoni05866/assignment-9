@@ -35,28 +35,28 @@ const Header = () => {
               <Link to="/blog">Blog</Link>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">JobHunter</a>
+          <a className="btn btn-ghost normal-case text-2xl">JobHunter</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <Link to="/ " className="px-3">
+            <Link to="/ " className="px-3 text-xl">
               Home
             </Link>
 
-            <Link to="/statistics" className="px-3">
+            <Link to="/statistics" className="px-3 text-xl">
               {" "}
               Statistics
             </Link>
-            <Link to="/jobs" className="px-3">
+            <Link to="/jobs" className="px-3 text-xl">
               Applied Jobs
             </Link>
-            <Link to="/blog" className="px-3">
+            <Link to="/blog" className="px-3 text-xl">
               Blog
             </Link>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn bg-indigo-500">Start Applying</a>
+          <a className="btn  bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">Start Applying</a>
         </div>
       </div>
     </div>

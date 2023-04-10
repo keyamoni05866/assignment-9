@@ -12,6 +12,13 @@
   margin: 50px;
 
 }
+.jobs-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 50px;
+    
+}
 @media screen and (max-width: 600px) {
   .banner {
     flex-direction: column;
@@ -26,7 +33,8 @@
   .info {
     width: 100%;
   }
-  .category{
+  .category, .jobs-container{
     grid-template-columns: 1fr;
   }
+
 }
