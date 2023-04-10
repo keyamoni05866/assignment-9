@@ -36,7 +36,7 @@ const Home = () => {
           </button>
         </div>
         <div className="img-container w-1/2">
-          <img src="/src/assets/All Images/P3OLGJ1 copy 1.png" alt="" />
+          <img src="https://i.ibb.co/wCdFrK8/P3-OLGJ1-copy-1.png"  alt="" />
         </div>
       </div>
 
