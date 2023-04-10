@@ -5,7 +5,7 @@ import './Main.css'
 
 const Main = () => {
     return (
-        <div className='main bg-sky-50'>
+        <div  className='main'>
             <Header></Header>
             <Outlet></Outlet>
         </div>
