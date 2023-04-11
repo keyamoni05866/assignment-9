@@ -11,8 +11,14 @@ import Main from './Components/Layout/Main';
 import Statistics from './Components/Statistics/Statistics';
 import Jobs from './Components/AppliedJobs/Jobs';
 import Blog from './Components/Blog/Blog';
+import ErrorPage from './Components/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
+
+  {
+    path: '*',
+    element: <ErrorPage></ErrorPage>
+  },
   {
     path: '/',
     element: <Main></Main>,
@@ -33,9 +39,10 @@ const router = createBrowserRouter([
       {
         path: 'blog',
         element: <Blog></Blog>
-      }
+      },
+    
     ]
-
+     
   }
 ])
 
