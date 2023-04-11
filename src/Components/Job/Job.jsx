@@ -3,8 +3,9 @@ import "./Job.css";
 import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faDollarSign } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 const Job = ({ job }) => {
-  const { title, company_name, location, Image, salary, job_type1, job_type2 } =
+  const { title, company_name, location, Image, salary, job_type1, job_type2 ,id} =
     job;
 
   return (
@@ -33,8 +34,8 @@ const Job = ({ job }) => {
         </div>
       </div>
 
-      <button className="mt-4 mb-0 py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
-        View Details
+      <button className="mt-4 mb-0 py-2 px-4 apply text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+       <Link to={`/job/${id}`}> View Details</Link>
       </button>
     </div>
   );
