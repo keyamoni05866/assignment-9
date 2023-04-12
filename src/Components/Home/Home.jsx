@@ -67,6 +67,9 @@ const Home = () => {
             <Job job={job} key={job.id}></Job>
           ))}
         </div>
+        <div>
+       
+        </div>
       </div>
     </div>
   );

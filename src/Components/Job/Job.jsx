@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Job = ({ job }) => {
   const { title, company_name, location, Image, salary, job_type1, job_type2 ,id} =
     job;
-
+     
   return (
     <div className="single-job ">
       <img src={Image} alt="" className="w-28" />

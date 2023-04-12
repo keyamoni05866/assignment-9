@@ -14,34 +14,42 @@ const Statistics = () => {
     {
       name: "Assignment-1",
       marks: 60,
+   
     },
     {
       name: "Assignment-2",
       marks: 55,
+   
     },
     {
       name: "Assignment-3",
       marks: 58,
+    
     },
     {
       name: "Assignment-4",
       marks: 54,
+     
     },
     {
       name: "Assignment-5",
       marks: 57,
+     
     },
     {
       name: "Assignment-6",
       marks: 55,
+    
     },
     {
       name: "Assignment-7",
       marks: 60,
+    
     },
     {
         name: "Assignment-8",
         marks: 60,
+      
       },
   ];
 
@@ -65,7 +73,9 @@ const Statistics = () => {
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Area type="monotone" dataKey="marks" stroke="#8884d8" fill="#8884d8" />
+          
+          <Area type="monotone"   dataKey="marks" stroke="#8884d8" fill="#8884d8" />
+         
         </AreaChart>
       </ResponsiveContainer>
     </div>

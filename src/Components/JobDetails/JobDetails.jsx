@@ -9,14 +9,14 @@ import {
   faCalendarAlt,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
-import { getAppliedJobs, setAppliedJobs } from "../../utilities/fakedb";
+
 
 
 const JobDetails = () => {
   const [singleJobs, setSingleJobs] = useState({});
   const JobDetails = useLoaderData();
   const id = useParams();
-  //  console.log(singleJobs)
+
   const {
 
     job_description,
@@ -30,7 +30,7 @@ const JobDetails = () => {
     address,
  
   } = singleJobs;
-  //   console.log(job_description);
+
 
   useEffect(() => {
     const details = JobDetails.find((job) => job.id == id.jobId);
@@ -38,11 +38,7 @@ const JobDetails = () => {
   }, []);
 
 
-    // handler for apply now button
-    const applyNowHandler = (id) =>{
-     getAppliedJobs()
-     setAppliedJobs(id)
-    }
+   
   return (
     <div className="">
       <div className="relative img-container  ">
@@ -106,7 +102,7 @@ const JobDetails = () => {
               <span className="ps-1"> {address} </span>
             </p>
           </div>
-          <button onClick={() => applyNowHandler(id)}  className="mt-4 mb-0 py-2 px-4 apply text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 w-full">
+          <button className="mt-4 mb-0 py-2 px-4 apply text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 w-full">
             Apply Now
           </button>
         </div>
