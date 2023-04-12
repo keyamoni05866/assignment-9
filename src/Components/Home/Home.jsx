@@ -35,7 +35,7 @@ const Home = () => {
             Get Started
           </button>
         </div>
-        <div className="img-container w-1/2">
+        <div className="img w-1/2">
           <img src="https://i.ibb.co/wCdFrK8/P3-OLGJ1-copy-1.png" alt="" />
         </div>
       </div>

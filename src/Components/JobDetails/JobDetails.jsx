@@ -9,6 +9,8 @@ import {
   faCalendarAlt,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
+import { getAppliedJobs, setAppliedJobs } from "../../utilities/fakedb";
+
 
 const JobDetails = () => {
   const [singleJobs, setSingleJobs] = useState({});
@@ -16,6 +18,7 @@ const JobDetails = () => {
   const id = useParams();
   //  console.log(singleJobs)
   const {
+
     job_description,
     job_responsibilities,
     educational_requirements,
@@ -25,6 +28,7 @@ const JobDetails = () => {
     phone,
     email,
     address,
+ 
   } = singleJobs;
   //   console.log(job_description);
 
@@ -33,14 +37,22 @@ const JobDetails = () => {
     setSingleJobs(details);
   }, []);
 
+
+    // handler for apply now button
+    const applyNowHandler = (id) =>{
+     getAppliedJobs()
+     setAppliedJobs(id)
+    }
   return (
-    <div>
-      <div>
-        {/* <h2>Job Details</h2>
-      <img src="https://i.ibb.co/86zJxh1/Vector-1.png" alt="" />
-      <img src="https://i.ibb.co/PmNx9HL/Vector.png" alt="" /> */}
+    <div className="">
+      <div className="relative img-container  ">
+  
+      <img src="https://i.ibb.co/86zJxh1/Vector-1.png" alt="" className="absolute bottom-0 top-0 right-0" />
+      <div className="text-center absolute top-28 left-1/2"><h2 className="text-3xl font-semibold  ">Job Details</h2></div>
+      <img src="https://i.ibb.co/PmNx9HL/Vector.png" alt="" className=""/> 
+      
       </div>
-      <div className="flex gap-7 w-full  mt-20 ">
+      <div className="flex gap-7 w-full ">
         <div className="description mt-2  w-3/5">
           <p className="  text-xl font-semibold text-justify">
             Job Description:{" "}
@@ -94,7 +106,7 @@ const JobDetails = () => {
               <span className="ps-1"> {address} </span>
             </p>
           </div>
-          <button className="mt-4 mb-0 py-2 px-4 apply text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 w-full">
+          <button onClick={() => applyNowHandler(id)}  className="mt-4 mb-0 py-2 px-4 apply text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 w-full">
             Apply Now
           </button>
         </div>
